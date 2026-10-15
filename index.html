@@ -14,13 +14,13 @@
 <p class="meta">A personal, non-commercial bot · 個人非商業用途的小程式</p>
 
 <p>jiangbot runs once a day on its operator's home server. It uses the Threads API keyword search to find
-recent public Threads posts that mention Taipei mayor 蔣萬安 (Chiang Wan-an), asks an AI model which of them are
+recent public Threads posts that mention one specific topic chosen by the operator, asks an AI model which of them are
 genuinely funny, and shares links to at most three of those posts in a private LINE group of about six friends.</p>
-<p class="zh">jiangbot 每天在作者家裡的伺服器上執行一次：用 Threads API 的關鍵字搜尋找出最近提到「蔣萬安」的公開貼文，請 AI 判斷哪些真的好笑，再把最多三篇的連結分享到一個約六位朋友的私人 LINE 群組。</p>
+<p class="zh">jiangbot 每天在作者家裡的伺服器上執行一次：用 Threads API 的關鍵字搜尋找出最近提到某個特定主題的公開貼文，請 AI 判斷哪些真的好笑，再把最多三篇的連結分享到一個約六位朋友的私人 LINE 群組。</p>
 
 <h2>How it works</h2>
 <ul>
-  <li>Searches public Threads posts for one keyword (「蔣萬安」), twice a day at most.</li>
+  <li>Searches public Threads posts for one fixed keyword, twice a day at most.</li>
   <li>Sends each post's text and images to Anthropic's Claude API to rate how funny it is.</li>
   <li>Shares the author's username, a short excerpt, and a link back to the original post on Threads.</li>
   <li>Does not post, reply, like, or message anyone on Threads. It only reads search results.</li>

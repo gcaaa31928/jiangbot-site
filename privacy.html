@@ -18,12 +18,12 @@ data jiangbot accesses through the Threads API, how it is used, and how to have 
 
 <h2>1. Data we access</h2>
 <h3>From the Threads keyword search (threads_keyword_search)</h3>
-<p>For public Threads posts that match our single keyword (「蔣萬安」), we receive: the post ID, text, media type,
+<p>For public Threads posts that match the single keyword chosen by the operator, we receive: the post ID, text, media type,
 image URLs, permalink, publish time, the author's public username, and whether the post is a reply.</p>
 <h3>From the operator's own Threads account (threads_basic)</h3>
 <p>The only account that signs in to jiangbot is the operator's own. We store its access token so the daily search can run.
 We do not collect data from any other user's account, and no other person signs in.</p>
-<p class="zh">我們只透過關鍵字搜尋讀取符合「蔣萬安」的公開貼文（貼文 ID、內文、圖片網址、連結、時間、作者公開帳號名稱）。唯一登入的帳號是作者本人，用來執行每天的搜尋。</p>
+<p class="zh">我們只透過關鍵字搜尋讀取符合作者設定的單一關鍵字的公開貼文（貼文 ID、內文、圖片網址、連結、時間、作者公開帳號名稱）。唯一登入的帳號是作者本人，用來執行每天的搜尋。</p>
 
 <h2>2. How we use it</h2>
 <ul>
